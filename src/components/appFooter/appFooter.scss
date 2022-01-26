@@ -1,0 +1,25 @@
+footer {
+  nav {
+    .header__list {
+      margin: 30px auto;
+      padding: 20px 0px;
+      width: 800px;
+      border-top: 1px solid #000;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  footer {
+    nav {
+      .header__list {
+        width: 100vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  
+}

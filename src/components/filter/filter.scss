@@ -1,0 +1,76 @@
+// .filter {
+//   text-align: right;
+//   width: 900px;
+//   margin: 30px auto;
+// }
+
+@import '../../style/variables';
+
+.filter {
+  width: 900px;
+  position: relative;
+  margin: 30px auto;
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    svg {
+      margin-right: 8px;
+      transform: rotate(180deg);
+      transition: transform .3s ease-in-out;
+      &.rotated {
+        transform: rotate(0);
+      }
+    }
+
+    b {
+      margin-right: 15px;
+    }
+
+    span {
+      color: $text-black;
+      border-bottom: 1px dashed $text-black;
+      cursor: pointer;
+    }
+  }
+
+  &__popup {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 160px;
+
+    ul {
+      overflow: hidden;
+      li {
+        padding: 12px 20px;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: rgba(254, 95, 30, 0.05);
+        }
+
+        &.active {
+          font-weight: bold;
+          color: $text-black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .filter {
+    width: 100vw;
+    &__label {
+      margin-right: 30px;
+    }
+  }
+}

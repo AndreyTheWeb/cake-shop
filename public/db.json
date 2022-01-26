@@ -1,0 +1,84 @@
+{
+  "cakes": [
+    {
+      "id": 0,
+      "imageUrl": "./cakesImg/cake1.png",
+      "name": "Торт 'Шоколадница'",
+      "price": 1000,
+      "category": 0,
+      "rating": 4
+    },
+    
+    {
+      "id": 1,
+      "imageUrl": "./cakesImg/cake2.png",
+      "name": "Торт 'Арабская ночь'",
+      "price": 1200,
+      "category": 0,
+      "rating": 5
+    },
+
+    {
+      "id": 2,
+      "imageUrl": "./cakesImg/cake3.png",
+      "name": "Торт 'Наполеон'",
+      "price": 2500,
+      "category": 0,
+      "rating": 1
+    },
+
+    {
+      "id": 3,
+      "imageUrl": "./cakesImg/cake4.png",
+      "name": "Торт 'Губка Боб'",
+      "price": 3500,
+      "category": 0,
+      "rating":3
+    },
+
+    {
+      "id": 4,
+      "imageUrl": "./cakesImg/cake5.png",
+      "name": "Торт 'Сникерс'",
+      "price": 3200,
+      "category": 0,
+      "rating": 4
+    },
+
+    {
+      "id": 5,
+      "imageUrl": "./cakesImg/cake6.png",
+      "name": "Торт 'Брауни'",
+      "price": 1200,
+      "category": 0,
+      "rating": 4
+    },
+
+    {
+      "id": 6,
+      "imageUrl": "./cakesImg/cake7.png",
+      "name": "Искушение Адама'",
+      "price": 2900,
+      "category": 0,
+      "rating": 4
+    },
+
+    {
+      "id": 7,
+      "imageUrl": "./cakesImg/cake8.png",
+      "name": "Торт 'Медовик'",
+      "price": 1700,
+      "category": 0,
+      "rating": 3
+    },
+
+    {
+      "id": 8,
+      "imageUrl": "./cakesImg/cake9.png",
+      "name": "Торт 'Сказка'",
+      "price": 2650,
+      "category": 0,
+      "rating": 2
+    }
+  ]
+}
