@@ -8,3 +8,6 @@ JS, React, SCSS, axios, Redux, React-Redux
 fake-server: json-server
 
 React: functional components, classes, React-Router
+
+
+123
