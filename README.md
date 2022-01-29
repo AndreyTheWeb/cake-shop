@@ -9,5 +9,6 @@ fake-server: json-server
 
 React: functional components, classes, React-Router
 
+Middleware: redux-thunk
 
 123

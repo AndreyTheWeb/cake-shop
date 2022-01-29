@@ -4,15 +4,20 @@ import React, { useState, useEffect, useRef, memo } from "react";
 import "./filter.scss";
 
 const Filter = memo(
-  function Filter({ items }) {
+  function Filter( {items, activeSortType, onClickSortType} ) {
+
+    console.log(items)
+    console.log(activeSortType)
+    console.log(onClickSortType)
 
   const [visiblePopup, setVisiblePopup] = useState(false);
 
   const filterRef = useRef();
 
-  const [activeItem, setActivItem] = useState(0);
+  // const [activeItem, setActivItem] = useState(0);
 
-  const activeLabel = items[activeItem].name;
+    const activeLabel = items.find((obj) => obj.type === activeSortType.type).name;
+    console.log(activeLabel)
 
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
@@ -25,9 +30,11 @@ const Filter = memo(
   };
 
   const onSelectItem = (index) => {
-    setActivItem(index);
+    if (onClickSortType) {
+      onClickSortType(index);
+    }
     setVisiblePopup(false);
-  }
+  };
 
   useEffect(() => {
     document.body.addEventListener('click', handleOutsideClick);
@@ -59,8 +66,8 @@ const Filter = memo(
           <ul>
             {items &&
               items.map((item, index) => (
-                <li className={activeItem === index ? 'active' : ''} key={`${item.type}_${index}`}
-                onClick={() => onSelectItem(index)}
+                <li className={activeSortType === item.type ? 'active' : ''} key={`${item.type}_${index}`}
+                onClick={() => onSelectItem(item.type)}
                 >
                   {item.name}
                 </li>

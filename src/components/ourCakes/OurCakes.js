@@ -1,16 +1,33 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { useCallback } from 'react';
+
+import { setSortBy } from '../../redux/actions/filters';
+
+
 import './ourCakes.scss';
 
 import ingredients from '../../resourses/img/ingrediets.jpg'
 import devider from '../../resourses/img/header-text-devider.png';
 import Filter from '../filter/Filter';
 
-const categoryItems = [
+const sortNames = [
   { name: 'популярности', type: 'popular' },
   { name: 'цене', type: 'price' },
   { name: 'алфавиту', type: 'alphabet' }
 ];
 
-const OurCakes = ({cakes}) => {
+
+
+const OurCakes = ({ cakes }) => {
+
+  const dispatch = useDispatch();
+
+  const onSelectSortType = useCallback((type) => {
+    dispatch(setSortBy(type));
+  }, []);
+
+  const { sortBy } = useSelector(({ filters }) => filters);
+  
   return (
     <div>
       <section className='header'>
@@ -43,10 +60,13 @@ const OurCakes = ({cakes}) => {
           </div>
         </div>
       </section>
-      <Filter items={categoryItems}/>
+      <Filter
+        items={sortNames}
+        activeSortType={sortBy}
+        onClickSortType={ onSelectSortType }/>
       <section className='product'>
-        {cakes.map((item, index) => (
-          <div className='our-best__item' key={`${item.name}_${index}`}>
+        { cakes.map((item) => (
+          <div className='our-best__item' key={`${item.name}_${item.id}`}>
             <div className='our-best__item_img'>
             <img src={item.imageUrl} alt="cake" />
             </div>
@@ -57,7 +77,8 @@ const OurCakes = ({cakes}) => {
               {item.price}  ₽
             </p>
           </div>
-          ))}
+          ))
+        }
       </section>
     </div>
   )

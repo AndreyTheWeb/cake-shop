@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
-import axios from "axios";
 
-import { setCakes } from "../../redux/actions/cakes";
+
+import { fetchCakes } from "../../redux/actions/cakes";
 
 import AppHeader from '../appHeader/AppHeader';
 import MainPage from "../Pages/MainPage";
@@ -25,27 +25,20 @@ import OurCakes from "../ourCakes/OurCakes";
 const App = () => {
   
   const dispatch = useDispatch();
-  const {cakes} = useSelector(({ cakes }) => {
-    return {
-      cakes: cakes.items,
-    }
-  });
-
-  // console.log(state);
+  const cakes = useSelector(({ cakes }) => cakes.items);
+  // console.log(cakes)
 
   // const [cakes, setCakes] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/db.json')
-      .then(({ data }) => {
-        dispatch(setCakes(data.cakes));
-        // setCakes(data.cakes);
-    });
+    
     // fetch('http://localhost:3000/db.json')
     //   .then((response) => response.json())
     //   .then(json => {
     //     setCakes(json.cakes);
     //   });
+    // console.log(fetchCakes())
+    dispatch(fetchCakes());
   }, [])
 
   return (
@@ -53,8 +46,12 @@ const App = () => {
       <div className="app">
         <AppHeader />
           <Routes>
-            <Route path="/" element={<MainPage cakes={cakes}/>}/>
-            <Route path="/ourCakes" element={<OurCakes cakes={cakes}/>}/>
+          <Route path="/" element={<MainPage
+            cakes={cakes}
+          />} />
+          <Route path="/ourCakes" element={<OurCakes
+            cakes={cakes}
+          />} />
           </Routes>
         <AppFooter/>
       </div>
