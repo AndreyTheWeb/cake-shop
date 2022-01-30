@@ -18,7 +18,7 @@ const Filter = memo(
 
     const activeLabel = items.find((obj) => obj.type === activeSortType.type).name;
     console.log(activeLabel)
-
+    
   const toggleVisiblePopup = () => {
     setVisiblePopup(!visiblePopup);
   };

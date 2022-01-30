@@ -10,10 +10,11 @@ import ingredients from '../../resourses/img/ingrediets.jpg'
 import devider from '../../resourses/img/header-text-devider.png';
 import Filter from '../filter/Filter';
 
+
 const sortNames = [
-  { name: 'популярности', type: 'popular' },
+  { name: 'популярности', type: 'rating' },
   { name: 'цене', type: 'price' },
-  { name: 'алфавиту', type: 'alphabet' }
+  { name: 'алфавиту', type: 'name' }
 ];
 
 
@@ -26,7 +27,11 @@ const OurCakes = ({ cakes }) => {
     dispatch(setSortBy(type));
   }, []);
 
-  const { sortBy } = useSelector(({ filters }) => filters);
+  const {sortBy} = useSelector(({ filters }) => filters);
+  console.log(sortBy)
+  // useEffect(() => {
+  //   dispatch(fetchCakes);
+  // }, [sortBy])
   
   return (
     <div>

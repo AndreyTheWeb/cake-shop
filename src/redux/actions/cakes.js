@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-export const fetchCakes = () => (dispatch) => {
-  axios.get('http://localhost:3000/db.json')
+export const fetchCakes = (sortBy) => (dispatch) => {
+  dispatch({
+    type: 'SET_LOADED',
+    payload: false,
+  });
+  axios.get(`http://localhost:3001/cakes?_sort=${sortBy.type}&_order=asc`)
   .then(({ data }) => {
     dispatch(setCakes(data));
     
@@ -11,5 +15,5 @@ export const fetchCakes = () => (dispatch) => {
 
 export const setCakes = (items) => ({
   type: 'SET_CAKES',
-  payload: items.cakes,
+  payload: items,
 });

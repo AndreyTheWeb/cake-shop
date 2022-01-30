@@ -26,7 +26,8 @@ const App = () => {
   
   const dispatch = useDispatch();
   const cakes = useSelector(({ cakes }) => cakes.items);
-  // console.log(cakes)
+  const  {sortBy}  = useSelector(({ filters }) => filters);
+  console.log(sortBy)
 
   // const [cakes, setCakes] = useState([]);
 
@@ -38,8 +39,8 @@ const App = () => {
     //     setCakes(json.cakes);
     //   });
     // console.log(fetchCakes())
-    dispatch(fetchCakes());
-  }, [])
+    dispatch(fetchCakes(sortBy));
+  }, [sortBy])
 
   return (
     <Router>
