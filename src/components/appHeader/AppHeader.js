@@ -25,9 +25,11 @@ const AppHeader = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#">
+          <NavLink
+              style={({ isActive }) => ({ color: isActive ? '#9f0013' : 'inherit' })}
+              to="/aboutUs">
               О нас
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

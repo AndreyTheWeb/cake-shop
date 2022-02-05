@@ -9,6 +9,7 @@ import AppHeader from '../appHeader/AppHeader';
 import MainPage from "../Pages/MainPage";
 import AppFooter from "../appFooter/AppFooter";
 import OurCakes from "../ourCakes/OurCakes";
+import AboutUs from "../aboutUs/AboutUs";
 
 // const cakes = [
 //   { name: 'Торт "Шоколадница"',  price : 1000 },
@@ -52,6 +53,8 @@ const App = () => {
           />} />
           <Route path="/ourCakes" element={<OurCakes
             cakes={cakes}
+          />} />
+          <Route path="/aboutUs" element={<AboutUs
           />} />
           </Routes>
         <AppFooter/>

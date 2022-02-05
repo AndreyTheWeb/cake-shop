@@ -25,13 +25,10 @@ const OurCakes = ({ cakes }) => {
 
   const onSelectSortType = useCallback((type) => {
     dispatch(setSortBy(type));
-  }, []);
+  });
 
   const {sortBy} = useSelector(({ filters }) => filters);
   console.log(sortBy)
-  // useEffect(() => {
-  //   dispatch(fetchCakes);
-  // }, [sortBy])
   
   return (
     <div>
