@@ -7,8 +7,6 @@ JS, React, SCSS, axios, Redux, React-Redux
 
 fake-server: json-server
 
-React: functional components, classes, React-Router
+React: functional components, React-Router
 
 Middleware: redux-thunk
-
-123
