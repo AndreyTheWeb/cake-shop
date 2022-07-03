@@ -34,7 +34,7 @@ const OurCakes = ({ cakes }) => {
     <div>
       <section className='header'>
         <h3>
-          Наши кексы
+          Наши тортики
         </h3>
       </section>
       <section className='ingredients'>
@@ -49,16 +49,14 @@ const OurCakes = ({ cakes }) => {
             </h4>
             <img src={devider} alt="devider" />
             <p>
-              Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
+              Домашние кондитерские используют только самые свежие и высококачественные продукты.
             </p>
             <p>
-              EAfraid at highly months do things on at. Situation recommend objection do intention so questions. 
+              Все продукты, с которыми работают специалисты, исключительной свежести. 
             </p>
             <p>
-              As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want.
-              Children me laughing we prospect answered followed. At it went is song that held help face.
+              Сами заказы изготавливаются в день, предшествующий мероприятию. Домашние десерты украшаются в день самого торжества. 
             </p>
-            
           </div>
         </div>
       </section>

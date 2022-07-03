@@ -7,23 +7,45 @@ const AboutUs = () => {
     <section className='wrapper'>
       <div className='about-us'>
         <h4>
-          About Us
+          О нас
         </h4>
         <div className='about-us__devider'>
           <img src={devider} alt="devider" />
         </div>
         <div className='about-us__text'>
+          <b>Индивидуальный подход.</b>
           <p>
-            Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
-            Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.
+            Здесь могут подобрать торт не только по вашему вкусу в буквальном смысле этой фразы, но и по тематике вашего праздника: от детского дня рождения до годовщины свадьбы. Ограничивает лишь фантазия!
           </p>
           <br />
+          <b>Высокое качество.</b>
           <p>
-            Now residence dashwoods she excellent you. Shade being under his bed her, Much
-            read on as draw. Blessing for ignorant exercise any yourself unpacked. Pleasant
-            horrible but confined day end marriage. Eagerness furniture set preserved far
-            recommend. Did even but nor are most gave hope. Secure active living depend son
-            repair day ladies now.
+            Домашние кондитерские используют только самые свежие и высококачественные продукты.
+          </p>
+          <br />
+          <b> Большой выбор.</b>
+          <p>
+            Особое внимание уделяется не только заказу, но и клиенту - вся работа и последующая доставка проводятся под чутким руководством заказчика.
+          </p>
+          <br />
+          <b>Свежесть продуктов.</b>
+          <p>
+            Все продукты, с которыми работают специалисты, исключительной свежести. Сами заказы изготавливаются в день, предшествующий мероприятию. Домашние десерты украшаются в день самого торжества.
+          </p>
+          <br />
+          <b>Своевременность обработки заказов.</b>
+          <p>
+            Все заказы принимаются индивидуально и обрабатываются в чётко оговоренные сроки.
+          </p>
+          <br />
+          <b>Эстетичность.</b>
+          <p>
+            Домашние кондитерские не предлагают банальных решений по украшению кондитерских изделий, а выдерживают их в эстетике, близкой самой кондитерской. Таким образом, просматривая каталог работ, вы сможете представить готовый результат того, что вам необходимо.
+          </p>
+          <br />
+          <b>Организация всего сладкого стола.</b>
+          <p>
+            Если вы не хотите ограничиться одним домашним тортом, а сразу сделать весь сладкий стол, то лучше обращаться в одну и ту же кондитерскую для того, чтобы всё было выдержано в единой концепции. Если вы еще не определились с местом, советуем вам определиться со стилем желаемых изделий и просмотреть каталоги продукции. Таким образом вы сможете примерно представить, в каком направлении вам стоит двигаться.
           </p>
         </div>
       </div>
