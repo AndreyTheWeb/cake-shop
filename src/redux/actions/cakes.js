@@ -7,7 +7,7 @@ export const fetchCakes = (sortBy) => (dispatch) => {
   });
   //если нужен будет доступ со всключенной БД, то нужно раскомментить строчку и в диспаче убрать .cakes 
   // axios.get(`http://localhost:3001/cakes?_sort=${sortBy.type}&_order=asc`)
-  axios.get(`http://myjson.dit.upm.es/api/bins/i9sb`)
+  axios.get(`https://myjson.dit.upm.es/api/bins/i9sb`)
     .then(({ data }) => {
     console.log(data)
     dispatch(setCakes(data.cakes));
