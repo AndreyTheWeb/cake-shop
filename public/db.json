@@ -12,7 +12,7 @@
     {
       "id": 1,
       "imageUrl": "./cakesImg/cake2.png",
-      "name": "Торт 'Орео'",
+      "name": "Орео",
       "price": 1500,
       "category": 2,
       "rating": 5
@@ -21,7 +21,7 @@
     {
       "id": 2,
       "imageUrl": "./cakesImg/cake3.png",
-      "name": "Торт морковный 'Соленая карамель'",
+      "name": "Морковный торт",
       "price": 1600,
       "category": 2,
       "rating": 1
@@ -30,7 +30,7 @@
     {
       "id": 3,
       "imageUrl": "./cakesImg/cake4.png",
-      "name": "Торт 'Экзотика'",
+      "name": "Экзотика",
       "price": 1800,
       "category": 1,
       "rating":3
@@ -39,8 +39,8 @@
     {
       "id": 4,
       "imageUrl": "./cakesImg/cake5.png",
-      "name": "Шоколадные капкейки с малиной",
-      "price": 1200,
+      "name": "Набор капкейков",
+      "price": 1300,
       "category": 1,
       "rating": 4
     },
@@ -48,7 +48,7 @@
     {
       "id": 5,
       "imageUrl": "./cakesImg/cake6.png",
-      "name": "Чизкейк с шоколадной основой",
+      "name": "Чизкейк",
       "price": 1400,
       "category": 1,
       "rating": 4
@@ -57,7 +57,7 @@
     {
       "id": 6,
       "imageUrl": "./cakesImg/cake7.png",
-      "name": "Торт с грушей и чаем эрл грей",
+      "name": "Груша и чай эрл грей",
       "price": 1700,
       "category": 0,
       "rating": 4
@@ -66,8 +66,8 @@
     {
       "id": 7,
       "imageUrl": "./cakesImg/cake8.png",
-      "name": "Набор капкейков с лимоном, шоколадом и карамелью",
-      "price": 1700,
+      "name": "Набор капкейков",
+      "price": 1300,
       "category": 0,
       "rating": 3
     },
@@ -75,14 +75,14 @@
     {
       "id": 8,
       "imageUrl": "./cakesImg/cake9.png",
-      "name": "Торт 'Лесная нежность'",
+      "name": "Лесная нежность",
       "price": 1600,
       "category": 2,
       "rating": 2
     },
     {
       "id": 9,
-      "imageUrl": "./cakesImg/cake10.jpg",
+      "imageUrl": "./cakesImg/cake10.png",
       "name": "Макаруны 'Ягодный чизкейк'",
       "price": 65,
       "category": 2,
@@ -90,7 +90,7 @@
     },
     {
       "id": 10,
-      "imageUrl": "./cakesImg/cake11.jpg",
+      "imageUrl": "./cakesImg/cake11.png",
       "name": "Бенто торт с грушей",
       "price": 800,
       "category": 2,
@@ -99,23 +99,23 @@
 
     {
       "id": 12,
-      "imageUrl": "./cakesImg/cake13.jpg",
-      "name": "Торт 'Малина фисташка'",
+      "imageUrl": "./cakesImg/cake13.png",
+      "name": "Малина фисташка",
       "price": 1600,
       "category": 2,
       "rating": 2
     },
     {
       "id": 13,
-      "imageUrl": "./cakesImg/cake14.jpg",
-      "name": "Торт 'Лавандовое вино и хризантемы'",
+      "imageUrl": "./cakesImg/cake14.png",
+      "name": "Лавандовое вино",
       "price": 1600,
       "category": 2,
       "rating": 2
     },
     {
       "id": 14,
-      "imageUrl": "./cakesImg/cake15.jpg",
+      "imageUrl": "./cakesImg/cake15.png",
       "name": "Торт на ваш выбор",
       "price": "договорная",
       "category": 2,

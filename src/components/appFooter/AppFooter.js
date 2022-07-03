@@ -17,14 +17,14 @@ const AppFooter = () => {
               style={({ isActive }) => ({ color: isActive ? '#9f0013' : 'inherit' })}
               to="/">
               <img src={logo} alt="Logo" />
-              <h1>Cake shop</h1>
+              <h1>VpCakes shop</h1>
             </NavLink>
           </li>
           <li>
             <NavLink
               style={({ isActive }) => ({ color: isActive ? '#9f0013' : 'inherit' })}
               to="/ourCakes">
-              Наши кексы
+              Наши предложения
             </NavLink>
           </li>
           <li>
