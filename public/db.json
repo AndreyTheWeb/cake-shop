@@ -1,13 +1,5 @@
 {
   "cakes": [
-    {
-      "id": 0,
-      "imageUrl": "./cakesImg/cake1.png",
-      "name": "Брауни",
-      "price": 1500,
-      "category": 0,
-      "rating": 4
-    },
     
     {
       "id": 1,
@@ -51,6 +43,15 @@
       "name": "Чизкейк",
       "price": 1400,
       "category": 1,
+      "rating": 4
+    },
+
+    {
+      "id": 0,
+      "imageUrl": "./cakesImg/cake1.png",
+      "name": "Брауни",
+      "price": 1500,
+      "category": 0,
       "rating": 4
     },
 
